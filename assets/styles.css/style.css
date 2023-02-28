@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+
+    a {
+        @apply border-b border-b-[#222];
+    }
+
+    a:focus,
+    a:active {
+        @apply no-underline outline-none transition-all ease-in duration-300
+    }
+
+    .socials li a i {
+        @apply -translate-y-0
+    }
+
+    .socials li:hover a i {
+        @apply scale-125 -translate-y-0
+    }
+
+    input {
+        @apply outline-none
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        @apply appearance-none m-0
+    }
+
+    input:focus {
+        @apply outline-none shadow-none
+    }
+
+    input {
+        @apply w-full block border-b border-b-[#999] px-[30px] box-border
+    }
+
+    input::placeholder {
+        @apply text-[#999]
+    }
+
+    input:focus {
+        @apply border-b border-b-[#222]
+    }
+
+    label {
+        @apply absolute left-0 top-1/2 text-[#222] -translate-y-1/2
+    }
+
+    input[type=checkbox]:not(old) {
+        @apply w-8 text-[1em] hidden
+    }
+
+    input[type=checkbox]:not(old)+label {
+        @apply inline-block leading-6 mt-[6px]
+    }
+
+    input[type=checkbox]:not(old)+label>span {
+        @apply inline-block w-[13px] h-[13px] border border-[#999] rounded-[2px] mr-3 mb-[3px] bg-white align-middle bg-gradient-to-t from-white to-white
+    }
+
+    input[type=checkbox]:not(old):checked+label>span:before {
+        @apply block text-[#222] text-center text-[11px] font-poppins font-bold leading-tight content-['✔']
+    }
+
+    input[type=checkbox]:not(old):checked+label>span {
+        @apply bg-gradient-to-t from-white to-white
+    }
+}
