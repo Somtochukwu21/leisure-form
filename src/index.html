@@ -24,8 +24,8 @@
   <body
     class="font-poppins text-[13px] leading-relaxed text-[#222] bg-[#f8f8f8] font-normal h-full"
   >
-    <div class="bg-[#f8f8f8] md:py-1">
-      <section id="signup">
+    <div class="bg-[#f8f8f8] md:py-6">
+      <section id="signup " class=" ">
         <div
           class="shadow-lg rounded-xl max-w-full w-[calc(100%-30px)] bg-[#fff] m-auto md:w-[900px] lg:max-w-7xl"
         >
@@ -93,7 +93,9 @@
                     ></label
                   >
                 </div>
-                <div class="relative mb-6 overflow-hidden form-button">
+                <div
+                  class="relative mb-6 overflow-hidden flex justify-center md:justify-start form-button"
+                >
                   <input
                     type="submit"
                     name="signup"
@@ -115,7 +117,7 @@
                 />
               </figure>
 
-              <a href="#signon" class="text-[#222] text-center text-sm"
+              <a href="./signin.html" class="text-[#222] text-center text-sm"
                 >I am already member</a
               >
             </div>
@@ -123,114 +125,7 @@
         </div>
       </section>
 
-      <section class="sign-in my-4 hidden" id="signon">
-        <div
-          class="shadow-lg rounded-xl max-w-full w-[calc(100%-30px)] bg-[#fff] m-auto md:w-[900px] lg:max-w-7xl"
-        >
-          <div class="md:flex-row flex flex-col pt-16 pb-20 justify-center">
-            <div
-              class="w-auto md:w-1/2 mx-[55px] mt-[45px] overflow-hidden order-2"
-            >
-              <figure class="m-0 mb-12 text-center">
-                <img
-                  class="max-w-full h-auto"
-                  src="../assets/images/signin-image.jpg"
-                  alt="sing in image"
-                />
-              </figure>
-              <a href="#signup" class="text-[#222] text-center text-sm"
-                >Create an account</a
-              >
-            </div>
-
-            <div
-              class="order-1 md:mr-[90px] md:ml-20 md:w-1/2 overflow-hidden w-auto px-[30px] md:px-0"
-            >
-              <h2
-                class="text-center text-4xl text-[#222] leading-relaxed font-black md:text-left mb-[33px]"
-              >
-                Sign in
-              </h2>
-              <form method="POST" class="w-full" id="login-form">
-                <div class="relative mb-6 overflow-hidden">
-                  <label for="your_name"><i class="fas fa-user"></i></label>
-                  <input
-                    type="text"
-                    name="your_name"
-                    id="your_name"
-                    placeholder="Your Name"
-                  />
-                </div>
-                <div class="relative mb-6 overflow-hidden">
-                  <label for="your_pass"><i class="fas fa-lock"></i></label>
-                  <input
-                    type="password"
-                    name="your_pass"
-                    id="your_pass"
-                    placeholder="Password"
-                  />
-                </div>
-                <div class="relative mb-6 overflow-hidden">
-                  <input
-                    type="checkbox"
-                    name="remember-me"
-                    id="remember-me"
-                    class="w-auto inline-block"
-                  />
-                  <label for="remember-me" class="relative top-0 translate-y-0"
-                    ><span><span></span></span>Remember me</label
-                  >
-                </div>
-                <div
-                  class="relative overflow-hidden mb-0 form-button text-center md:text-left"
-                >
-                  <input
-                    type="submit"
-                    name="signin"
-                    id="signin"
-                    class="hover:bg-[#4292dc] inline-block bg-[#6dabe4] text-white border-b-0 w-auto py-3 px-9 rounded cursor-pointer mt-4"
-                    value="Log in"
-                  />
-                </div>
-              </form>
-
-              <div
-                class="social-login flex items-center mt-20 flex-col md:flex-row justify-center"
-              >
-                <span
-                  class="social-label mr-0 mb-[10px] inline-block md:mr-4 md:mb-0"
-                  >Or login with</span
-                >
-                <ul
-                  class="socials flex list-none p-0 m-0 [&>*]:p-[5px] [&>*>*]:no-underline [&>*>*>*]:w-[30px] [&>*>*>*]:h-[30px] [&>*>*>*]:text-white [&>*>*>*]:text-sm [&>*>*>*]:rounded [&>*>*>*]:transition-transform [&>*>*>*]:ease-out [&>*>*>*]:duration-300"
-                >
-                  <li>
-                    <a href="#">
-                      <i
-                        class="flex justify-center items-center fab fa-facebook-f bg-[#3b5998]"
-                      ></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i
-                        class="flex justify-center items-center fab fa-twitter bg-[#1da0f2]"
-                      ></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i
-                        class="flex mr-0 justify-center items-center fa-brands fa-google bg-[#e72734]"
-                      ></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  
     </div>
     <script src="./bundle.js"></script>
   </body>

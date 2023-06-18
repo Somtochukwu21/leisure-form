@@ -7,7 +7,7 @@
 @layer components {
 
     a {
-        @apply border-b border-b-[#222];
+        @apply underline;
     }
 
     a:focus,

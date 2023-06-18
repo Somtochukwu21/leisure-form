@@ -514,9 +514,7 @@ video {
 }
 
 a {
-  border-bottom-width: 1px;
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(34 34 34 / var(--tw-border-opacity));
+  text-decoration-line: underline;
 }
 
 a:focus,
@@ -681,11 +679,6 @@ input[type=checkbox]:not(old):checked+label>span {
   margin-right: 55px;
 }
 
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -724,6 +717,14 @@ input[type=checkbox]:not(old):checked+label>span {
 
 .mt-\[45px\] {
   margin-top: 45px;
+}
+
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+
+.block {
+  display: block;
 }
 
 .inline-block {
@@ -856,6 +857,11 @@ input[type=checkbox]:not(old):checked+label>span {
   padding-bottom: 0.75rem;
 }
 
+.py-\[59px\] {
+  padding-top: 59px;
+  padding-bottom: 59px;
+}
+
 .py-\[75px\] {
   padding-top: 75px;
   padding-bottom: 75px;
@@ -930,6 +936,15 @@ input[type=checkbox]:not(old):checked+label>span {
 }
 
 @media (min-width: 768px) {
+  .md\:order-2 {
+    order: 2;
+  }
+
+  .md\:mx-\[55px\] {
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+
   .md\:mx-\[70px\] {
     margin-left: 70px;
     margin-right: 70px;
@@ -951,6 +966,10 @@ input[type=checkbox]:not(old):checked+label>span {
     margin-right: 90px;
   }
 
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -963,14 +982,18 @@ input[type=checkbox]:not(old):checked+label>span {
     flex-direction: row;
   }
 
+  .md\:justify-start {
+    justify-content: flex-start;
+  }
+
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
   }
 
-  .md\:py-1 {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .md\:pl-\[34px\] {

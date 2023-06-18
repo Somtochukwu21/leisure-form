@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noble – Home for good ideas.</title>
+  <link rel="shortcut icon" href="https://cdn.logojoy.com/wp-content/uploads/2018/05/30164225/572.png"
+    type="image/x-icon" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../assets/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="../dist/output.css" />
+</head>
+
+<body>
+  <section class="sign-in  " id="signon">
+    <div class="shadow-lg rounded-xl max-w-full w-[calc(100%-30px)] bg-[#fff] m-auto md:w-[900px] lg:max-w-7xl">
+      <div class="md:flex-row flex flex-col py-[59px] justify-center">
+        <!-- pt-16 pb-20  -->
+        <div class="w-auto md:w-1/2 md:mx-[55px] mt-[50px] md:mt-0 overflow-hidden order-2">
+          <figure class="m-0 mb-12 text-center">
+            <img class="max-w-full h-auto" src="../assets/images/signin-image.jpg" alt="sing in image" />
+          </figure>
+          <a href="./index.html" class="text-[#222] block text-center text-sm">Create an account</a>
+        </div>
+
+        <div class="order-1 md:order-2 md:mr-[90px] md:ml-20 md:w-1/2 overflow-hidden w-auto px-[30px] md:px-0">
+          <h2 class="text-center text-4xl text-[#222] leading-relaxed font-black md:text-left mb-[33px]">
+            Sign in
+          </h2>
+          <form method="POST" class="w-full" id="login-form">
+            <div class="relative mb-6 overflow-hidden">
+              <label for="your_email"><i class="fas fa-envelope"></i></label>
+              <input type="email" name="your_email" id="your_email" placeholder="Your Email" />
+            </div>
+            <div class="relative mb-6 overflow-hidden">
+              <label for="your_pass"><i class="fas fa-lock"></i></label>
+              <input type="password" name="your_pass" id="your_pass" placeholder="Password" />
+            </div>
+            <div class="relative mb-6 overflow-hidden">
+              <input type="checkbox" name="remember-me" id="remember-me" class="w-auto inline-block" />
+              <label for="remember-me" class="relative top-0 translate-y-0"><span><span></span></span>Remember
+                me</label>
+            </div>
+            <div
+              class="relative overflow-hidden mb-0 form-button flex justify-center md:justify-start text-center md:text-left">
+              <input type="submit" name="signin" id="signin"
+                class="hover:bg-[#4292dc] inline-block bg-[#6dabe4] text-white border-b-0 w-auto py-3 px-9 rounded cursor-pointer mt-4"
+                value="Log in" />
+            </div>
+          </form>
+
+          <div class="social-login flex items-center mt-20 flex-col md:flex-row justify-center">
+            <span class="social-label mr-0 mb-[10px] inline-block md:mr-4 md:mb-0">Or login with</span>
+            <ul
+              class="socials flex list-none p-0 m-0 [&>*]:p-[5px] [&>*>*]:no-underline [&>*>*>*]:w-[30px] [&>*>*>*]:h-[30px] [&>*>*>*]:text-white [&>*>*>*]:text-sm [&>*>*>*]:rounded [&>*>*>*]:transition-transform [&>*>*>*]:ease-out [&>*>*>*]:duration-300">
+              <li>
+                <a href="#">
+                  <i class="flex justify-center items-center fab fa-facebook-f bg-[#3b5998]"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="flex justify-center items-center fab fa-twitter bg-[#1da0f2]"></i></a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="flex mr-0 justify-center items-center fa-brands fa-google bg-[#e72734]"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
